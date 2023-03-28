@@ -1,0 +1,222 @@
+﻿<Window x:Class="WpfCalcLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfCalcLab"
+        mc:Ignorable="d"
+        Title="Some Strange Calculator" Height="744" Width="600">
+    <Window.Resources>
+        <Image x:Key="add" Source="calcImages/add.jpg"></Image>
+        <Image x:Key="backspace" Source="calcImages/backspace.jpg"></Image>
+        <Image x:Key="CE" Source="calcImages/CE.jpg"></Image>
+        <Image x:Key="decimalPoint" Source="calcImages/decimalPoint.jpg"></Image>
+        <Image x:Key="Divide" Source="calcImages/Divide.jpg"></Image>
+        <Image x:Key="eight" Source="calcImages/eight.jpg"></Image>
+        <Image x:Key="equal" Source="calcImages/equal.jpg"></Image>
+        <Image x:Key="five" Source="calcImages/five.jpg"></Image>
+        <Image x:Key="four" Source="calcImages/four.jpg"></Image>
+        <Image x:Key="GT" Source="calcImages/GT.jpg"></Image>
+        <Image x:Key="mMinus" Source="calcImages/mMinus.jpg"></Image>
+        <Image x:Key="MPlus" Source="calcImages/MPlus.jpg"></Image>
+        <Image x:Key="mrc" Source="calcImages/mrc.jpg"></Image>
+        <Image x:Key="mu" Source="calcImages/mu.jpg"></Image>
+        <Image x:Key="multiply" Source="calcImages/multiply.jpg"></Image>
+        <Image x:Key="nine" Source="calcImages/nine.jpg"></Image>
+        <Image x:Key="ONAC" Source="calcImages/ONAC.jpg"></Image>
+        <Image x:Key="one" Source="calcImages/one.jpg"></Image>
+        <Image x:Key="percent" Source="calcImages/percent.jpg"></Image>
+        <Image x:Key="seven" Source="calcImages/seven.jpg"></Image>
+        <Image x:Key="six" Source="calcImages/six.jpg"></Image>
+        <Image x:Key="solarPanel" Source="calcImages/solarPanel.jpg"></Image>
+        <Image x:Key="subtract" Source="calcImages/subtract.jpg"></Image>
+        <Image x:Key="three" Source="calcImages/three.jpg"></Image>
+        <Image x:Key="two" Source="calcImages/two.jpg"></Image>
+        <Image x:Key="zero" Source="calcImages/zero.jpg"></Image>
+        <Image x:Key="zerozero" Source="calcImages/zerozero.jpg"></Image>
+    </Window.Resources>
+
+
+    <Grid x:Name="CalculatorGrid" Background ="#c6d9d3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="DisplayGrid" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="9.5*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="CalcDisplayTextBox" Grid.Column="1" Grid.Row="1" FontSize="32" Background="#808080" TextAlignment="Right" />
+
+
+            <!--<Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="Some Strange Calculator"></Label>-->
+
+        </Grid>
+
+        <Grid x:Name="SolarPanelGrid" Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height=".8*"/>
+                <RowDefinition Height=".1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="1" Grid.Column="0" >
+                <StaticResource ResourceKey="solarPanel"></StaticResource>
+            </Button>
+            <Button x:Name="OnButton" Grid.Row="1" Grid.Column="2">
+                <StaticResource ResourceKey="ONAC"></StaticResource>
+            </Button>
+        </Grid>
+
+        <Grid x:Name="ButtonsGrid" Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6.5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9.4*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="NumberButtonsGrid" Grid.Row="1" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.25*"/>
+                    <RowDefinition Height=".35*"/>
+                    <RowDefinition Height="1.25*"/>
+                    <RowDefinition Height=".35*"/>
+                    <RowDefinition Height="1.25*"/>
+                    <RowDefinition Height=".35*"/>
+                    <RowDefinition Height="1.25*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2.8*"/>
+                    <ColumnDefinition Width=".5*"/>
+                    <ColumnDefinition Width="2.8*"/>
+                    <ColumnDefinition Width=".5*"/>
+                    <ColumnDefinition Width="2.8*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="SevenButton" Grid.Row="0" Grid.Column="0">
+                    <StaticResource ResourceKey="seven"></StaticResource>
+                </Button>
+                <Button x:Name="EightButton" Grid.Row="0" Grid.Column="2">
+                    <StaticResource ResourceKey="eight"></StaticResource>
+                </Button>
+                <Button x:Name="NineButton" Grid.Row="0" Grid.Column="4">
+                    <StaticResource ResourceKey="nine"></StaticResource>
+                </Button>
+                <Button x:Name="FourButton" Grid.Row="2" Grid.Column="0">
+                    <StaticResource ResourceKey="four"></StaticResource>
+                </Button>
+                <Button x:Name="FiveButton" Grid.Row="2" Grid.Column="2">
+                    <StaticResource ResourceKey="five"></StaticResource>
+                </Button>
+                <Button x:Name="SixButton" Grid.Row="2" Grid.Column="4">
+                    <StaticResource ResourceKey="six"></StaticResource>
+                </Button>
+                <Button x:Name="OneButton" Grid.Row="4" Grid.Column="0">
+                    <StaticResource ResourceKey="one"></StaticResource>
+                </Button>
+                <Button x:Name="TwoButton" Grid.Row="4" Grid.Column="2">
+                    <StaticResource ResourceKey="two"></StaticResource>
+                </Button>
+                <Button x:Name="ThreeButton" Grid.Row="4" Grid.Column="4">
+                    <StaticResource ResourceKey="three"></StaticResource>
+                </Button>
+                <Button x:Name="ZeroButton" Grid.Row="6" Grid.Column="0">
+                    <StaticResource ResourceKey="zero"></StaticResource>
+                </Button>
+                <Button x:Name="ZeroZeroButton" Grid.Row="6" Grid.Column="2">
+                    <StaticResource ResourceKey="zerozero"></StaticResource>
+                </Button>
+                <Button x:Name="DecimalPointButton" Grid.Row="6" Grid.Column="4">
+                    <StaticResource ResourceKey="decimalPoint"></StaticResource>
+                </Button>
+            </Grid>
+
+            <Grid x:Name="ActionsButtonsGrid" Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="DivideButton" Grid.Row="0" Grid.Column="0">
+                    <StaticResource ResourceKey="Divide"></StaticResource>
+                </Button>
+                <Button x:Name="BackspaceButton" Grid.Row="0" Grid.Column="1">
+                    <StaticResource ResourceKey="backspace"></StaticResource>
+                </Button>
+                <Button x:Name="MultiplyButton" Grid.Row="1" Grid.Column="0">
+                    <StaticResource ResourceKey="multiply"></StaticResource>
+                </Button>
+                <Button x:Name="PercentButton" Grid.Row="1" Grid.Column="1">
+                    <StaticResource ResourceKey="percent"></StaticResource>
+                </Button>
+                <Button x:Name="SubtractButton" Grid.Row="2" Grid.Column="0">
+                    <StaticResource ResourceKey="subtract"></StaticResource>
+                </Button>
+                <Button x:Name="MUButton" Grid.Row="2" Grid.Column="1">
+                    <StaticResource ResourceKey="mu"></StaticResource>
+                </Button>
+                <Button x:Name="AddButton" Grid.Row="3" Grid.Column="0">
+                    <StaticResource ResourceKey="add"></StaticResource>
+                </Button>
+                <Button x:Name="EqualButton" Grid.Row="3" Grid.Column="1">
+                    <StaticResource ResourceKey="equal"></StaticResource>
+                </Button>
+            </Grid>
+
+            <Grid x:Name="ExtraActionsGrid1" Grid.Row="0" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="MPlusButton" Grid.Row="0" Grid.Column="0">
+                    <StaticResource ResourceKey="MPlus"></StaticResource>
+                </Button>
+                <Button x:Name="MMinusButton" Grid.Row="0" Grid.Column="1">
+                    <StaticResource ResourceKey="mMinus"></StaticResource>
+                </Button>
+                <Button x:Name="MRCButton" Grid.Row="0" Grid.Column="2">
+                    <StaticResource ResourceKey="mrc"></StaticResource>
+                </Button>
+
+            </Grid>
+            <Grid x:Name="ExtraActionsGrid2" Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="GTButton" Grid.Row="0" Grid.Column="0">
+                    <StaticResource ResourceKey="GT"></StaticResource>
+                </Button>
+                <Button x:Name="CEButton" Grid.Row="0" Grid.Column="1">
+                    <StaticResource ResourceKey="CE"></StaticResource>
+                </Button>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

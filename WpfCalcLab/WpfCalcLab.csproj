@@ -1,0 +1,124 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="calcImages\add.jpg" />
+    <None Remove="calcImages\backspace.jpg" />
+    <None Remove="calcImages\CE.jpg" />
+    <None Remove="calcImages\decimalPoint.jpg" />
+    <None Remove="calcImages\Divide.jpg" />
+    <None Remove="calcImages\eight.jpg" />
+    <None Remove="calcImages\equal.jpg" />
+    <None Remove="calcImages\five.jpg" />
+    <None Remove="calcImages\four.jpg" />
+    <None Remove="calcImages\GT.jpg" />
+    <None Remove="calcImages\mMinus.jpg" />
+    <None Remove="calcImages\MPlus.jpg" />
+    <None Remove="calcImages\mrc.jpg" />
+    <None Remove="calcImages\mu.jpg" />
+    <None Remove="calcImages\multiply.jpg" />
+    <None Remove="calcImages\nine.jpg" />
+    <None Remove="calcImages\ONAC.jpg" />
+    <None Remove="calcImages\one.jpg" />
+    <None Remove="calcImages\percent.jpg" />
+    <None Remove="calcImages\seven.jpg" />
+    <None Remove="calcImages\six.jpg" />
+    <None Remove="calcImages\solarPanel.jpg" />
+    <None Remove="calcImages\subtract.jpg" />
+    <None Remove="calcImages\three.jpg" />
+    <None Remove="calcImages\two.jpg" />
+    <None Remove="calcImages\zero.jpg" />
+    <None Remove="calcImages\zerozero.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calcImages\add.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\backspace.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\CE.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\decimalPoint.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\Divide.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\eight.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\equal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\five.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\four.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\GT.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\mMinus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\MPlus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\mrc.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\mu.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\multiply.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\nine.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\ONAC.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\one.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\percent.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\seven.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\six.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\solarPanel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\subtract.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\three.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\two.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\zero.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="calcImages\zerozero.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
